@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+<<<<<<< HEAD
     <h1>Hi, {{ user.username }}!</h1>
+=======
+    <h1>Hi, {{ current_user.username }}!</h1>
+>>>>>>> 6d89c72c3471fde89a361ec9709c478bc9e19a08
     {% for post in posts %}
     <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
     {% endfor %}
